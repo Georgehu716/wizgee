@@ -1,0 +1,19 @@
+{
+    "name": "wizgee",
+    "description": "a chrome extension that pronunciation",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "wizgee.html",
+        "default_icon": "wizgee.png"
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Opens wizgee.html"
+        }
+    }
+}
