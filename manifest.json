@@ -4,16 +4,18 @@
     "version": "0.0.1",
     "manifest_version": 3,
     "action": {
-        "default_popup": "wizgee.html",
-        "default_icon": "wizgee.png"
+        "default_popup": "/wizgee/wizgee.html",
+        "default_icon": "/images/wizgee.png"
     },
-    "commands": {
-        "_execute_action": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+F",
-                "mac": "MacCtrl+Shift+F"
-            },
-            "description": "Opens wizgee.html"
-        }
-    }
+    "options_page": "options.html",
+    "icons": {
+        "16": "/images/wizgee.png",
+        "32": "/images/wizgee.png",
+        "48": "/images/wizgee.png",
+        "128": "/images/wizgee.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting"]
 }
