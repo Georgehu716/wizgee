@@ -1,11 +1,17 @@
 {
     "name": "wizgee",
-    "description": "a chrome extension that pronunciation",
+    "description": "a chrome extension for drawing words to pronounce",
     "version": "0.0.1",
     "manifest_version": 3,
     "action": {
-        "default_popup": "wizgee.html",
-        "default_icon": "wizgee.png"
+        "default_popup": "/wizgee/wizgee.html",
+        "default_icon": "/images/wizgee.png"
+    },
+    "icons": {
+        "16": "/images/wizgee.png",
+        "32": "/images/wizgee.png",
+        "48": "/images/wizgee.png",
+        "128": "/images/wizgee.png"
     },
     "commands": {
         "_execute_action": {

@@ -1,6 +1,6 @@
 # wizgee
 
-a chrome extension that pronunciation
+a chrome extension for drawing words to pronounce
 
 ## features
 
