@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>onselect test</title>
+    <script>
+        document.addEventListener("mouseup", selectText);
+        function selectText(e) {
+                    if (document.getSelection) {
+                                const selectedText = document.getSelection().toString()
+                                console.log('text' + selectedText + 'ok')
+                                if (selectedText === '') {
+                                            console.log('nothing')
+                                        } else {
+                                                    alert(selectedText)
+                                                }
+                            }
+                }
+    </script>
+    </head>
+    <body>
+        <textarea>
+            Highlight some of the text with the mouse pointer to fire the onselect event.
+        </textarea>
+        <p>This is a test paragraph for onselect event.</p>
+    </body>
+</html>
